@@ -1,15 +1,4 @@
 
-# 🧠 Simple Models, Rich Representations: Visual Decoding from Primate Intracortical Neural Signals
-
-## 📄 Abstract
-
-Understanding how patterns of neural activity give rise to perception remains a central challenge in neuroscience. Here, we tackle the problem of decoding visual information from high-density intracortical recordings in primates. Analyzing the THINGS Ventral Stream Spiking Dataset, we systematically explore the impact of model architecture, objective function, and data scaling on decoding performance.
-Our findings reveal that the decoding accuracy is primarily driven by modeling temporal dynamics in neural activity, rather than architectural complexity. We show that a simple model combining temporal attention with a shallow MLP achieves top-1 image retrieval accuracy up to around 70%, outperforming linear baselines and recurrent or convolutional models.
-Scaling experiments reveal predictable regimes of diminishing returns with respect to input dimensionality and training set size. Leveraging these insights, we propose a modular generative decoding pipeline that integrates low-resolution latent reconstruction with semantically conditioned diffusion. Following recent trends in increasing inference-time computation, our approach generates multiple candidate outputs conditioned on neural signals, which are subsequently ranked based on their structural similarity to the initial latent reconstruction. This strategy enables the generation of plausible visual reconstructions from 200 ms of brain activity.
-Our findings offer guiding principles for future brain-computer interfaces and open new avenues for semantic brain decoding.
-
----
-
 ## 📘 Notebooks Overview
 
 ### `monkeys_retrieve.ipynb`: Analysis & Decoding
